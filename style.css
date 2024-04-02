@@ -1,0 +1,23 @@
+:root {
+    --fg: #f1f1f1;
+    --bg: #1e1e1e;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: var(--bg);
+    color: var(--fg);
+}
+.mainSection {
+    text-align: center;
+}
+canvas {
+    display: block;
+}
