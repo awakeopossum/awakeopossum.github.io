@@ -28,6 +28,10 @@ html, body {
     text-decoration: underline;
 }
 
+.parLink {
+    text-decoration: none;
+}
+
 /*to be reseen*/
 #perlinCanvasDiv,
 #textDiv {
