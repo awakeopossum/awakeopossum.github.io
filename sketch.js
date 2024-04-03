@@ -6,19 +6,19 @@ const res = 0.02;
 let points = [];
 
 //circle: centered on point O(h, k), has radius r
-let o;
-let r = 200;
+let o, r;
 
 let isDrawing = true;
 
 function setup() {
-  let c = createCanvas(500, 500, P2D); // windowWidth, windowHeight
+  let c = createCanvas(300, 300, P2D); // windowWidth, windowHeight
   c.parent(perlinCanvasDivName);
   c.mouseClicked(redrawFromStart);
   background(bg);
   
   let space = width / nr;
   o = createVector((width / 2), (height / 2));
+  r = windowWidth * 2 / 5;
   angleMode(DEGREES);
   noiseDetail(1);
   
