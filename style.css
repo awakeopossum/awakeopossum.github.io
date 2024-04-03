@@ -28,6 +28,9 @@ html, body {
     text-decoration: underline;
 }
 
+.parTitle {
+    font-weight: 400;
+}
 .parLink {
     text-decoration: none;
 }
