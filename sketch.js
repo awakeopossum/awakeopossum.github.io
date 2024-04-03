@@ -1,3 +1,4 @@
+const perlinCanvasDivName = 'perlinCanvasDiv';
 const bg = '#1e1e1e', fg = '#f1f1f1';
 const nr = 40;
 
@@ -11,7 +12,9 @@ let r = 200;
 let isDrawing = true;
 
 function setup() {
-  createCanvas(500, 500); // windowWidth, windowHeight
+  let c = createCanvas(500, 500, P2D); // windowWidth, windowHeight
+  c.parent(perlinCanvasDivName);
+  c.mouseClicked(redrawFromStart);
   background(bg);
   
   let space = width / nr;
@@ -27,14 +30,12 @@ function setup() {
   }
 }
 
-//reset function
-/*
-function keyPressed() {
+function redrawFromStart() {
   points = [];
   randomSeed(millis());
   noiseSeed(millis());
   setup();
-}*/
+}
 
 function draw() {
   noStroke();
@@ -44,9 +45,9 @@ function draw() {
     var angle = map(noise(points[p].x * res, points[p].y * res),
                     0, 1, 0, 720);
     var cl = [
-      map(points[p].x, 0, width, 50, 255),
+      map(points[p].x, 0, width, 50, 255) + 40,
       map(points[p].y, 0, height, 50, 255),
-      map(points[p].x, 0, width, 255, 50),
+      255 - map(points[p].x, 0, width, 50, 255),
     ];
     fill(cl);
     points[p].add(createVector(cos(angle), sin(angle)));
