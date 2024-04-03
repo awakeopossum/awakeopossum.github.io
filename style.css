@@ -44,6 +44,7 @@ html, body {
   #perlinCanvasDiv,
   #textDiv {
     display: block;
+    text-align: center;
   }
   #perlinCanvasDiv {
     margin-bottom: 1em;
