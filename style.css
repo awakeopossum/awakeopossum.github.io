@@ -46,4 +46,6 @@ html, body {
     display: block;
     margin: 2em;
   }
+  #perlinCanvasDiv {
+      margin-bottom: 2em;
 }
