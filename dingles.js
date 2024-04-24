@@ -69,7 +69,6 @@ function dinglesSketch(p) {
   }
   
   p.windowResized = function () {
-    console.log('DINGLES SAYS RESIZED!');
     p.w = p.dingleCanvasDiv.offsetWidth;
     p.lineFactor = p.w / 500;
     p.resizeCanvas(p.w, p.w);
