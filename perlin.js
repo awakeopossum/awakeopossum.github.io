@@ -57,6 +57,13 @@ var perlinSketch = function(p) {
       }
     }
   }
+
+  p.windowResized = function () {
+    console.log('PERLIN SAYS RESIZED!');
+    p.w = p.perlinCanvasDiv.offsetWidth;
+    p.resizeCanvas(p.w, p.w);
+    p.redrawFromStart();
+  }
 }
 
 var p5perlin = new p5(perlinSketch);
