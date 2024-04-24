@@ -20,7 +20,7 @@ function dinglesSketch(p) {
     for (var c = 0; c < p.pendulumCount; c++) {
       p.pendulums[c] = new Pendulum(c);
     }
-    //skip some time
+    //skip some time (360 frames)
     for (var c = 0; c < 360; c++) {
       for (var pd of p.pendulums) {
         pd.update()
@@ -28,9 +28,15 @@ function dinglesSketch(p) {
     }
     let cv = p.createCanvas(p.w, p.w, p.P2D); // windowWidth, windowHeight
     cv.parent(p.dingleCanvasDivName);
-    //cv.mouseClicked(redrawFromStart);
+    cv.mouseClicked(p.changeDirection);
     p.background(p.bg);
     p.stroke(p.fg);
+  }
+
+  p.changeDirection = function () {
+    for (var pd of p.pendulums) {
+      pd.angleSpeed *= (-1);
+    }
   }
   
   p.draw = function() {
@@ -60,6 +66,13 @@ function dinglesSketch(p) {
       p.line(0, 0, x, y);
       p.circle(x, y, p.pendulumRadius);
     }
+  }
+  
+  p.windowResized = function () {
+    console.log('DINGLES SAYS RESIZED!');
+    p.w = p.dingleCanvasDiv.offsetWidth;
+    p.lineFactor = p.w / 500;
+    p.resizeCanvas(p.w, p.w);
   }
 }
 
