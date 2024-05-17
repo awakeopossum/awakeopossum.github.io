@@ -2,6 +2,7 @@
   --fg: #ED581F;
   --fg-sec: #DE2D06;
   --bg: #2B2B36;
+  --white: #c0c0c1;
 }
 
 html, body {
@@ -70,7 +71,15 @@ html::-webkit-scrollbar {
   text-decoration: none;
   color: var(--fg-sec);
 }
-
+.mainTitleLink {
+  color: inherit;
+}
+.hoverLink {
+  transition: color 750ms;
+}
+.hoverLink:hover {
+  color: var(--white);
+}
 .p5Div {
   width: 400px;
   height: 400px;
