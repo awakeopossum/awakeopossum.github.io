@@ -62,7 +62,7 @@ var perlinSketch = function(p) {
   p.windowResized = function () {
     if (!p.timeout) {
       p.timeout = setTimeout(p.windowHasFinishedResizing, 1500);
-    ) else {
+    } else {
       window.clearTimeout(p.timeout);
       p.timeout = setTimeout(p.windowHasFinishedResizing, 1500);
     }
