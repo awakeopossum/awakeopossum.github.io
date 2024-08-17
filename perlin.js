@@ -3,6 +3,7 @@ var perlinSketch = function(p) {
   p.perlinCanvasDivName = 'perlinCanvasDiv'
   p.perlinCanvasDiv = document.getElementById(p.perlinCanvasDivName);
   p.w = p.perlinCanvasDiv.offsetWidth;
+  p.timeout;
   
   p.bg = getBackgroundColor(), p.fg = '#F1F1F1';
   p.deviation = 10;
@@ -59,6 +60,14 @@ var perlinSketch = function(p) {
   }
 
   p.windowResized = function () {
+    if (!p.timeout) {
+      p.timeout = setTimeout(p.windowHasFinishedResizing, 1500);
+    ) else {
+      window.clearTimeout(p.timeout);
+      p.timeout = setTimeout(p.windowHasFinishedResizing, 1500);
+    }
+  }
+  p.windowHasFinishedResizing = function () {
     p.w = p.perlinCanvasDiv.offsetWidth;
     p.resizeCanvas(p.w, p.w);
     p.redrawFromStart();
