@@ -1,0 +1,18 @@
+/* links animations */
+.link-underline-opacity-0 {
+    transition: text-decoration-color 0.5s;
+}
+
+/* hide scrollbar but allow scrolling */
+.hide-scrollbar {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.bg-animated {
+    transition: background-color ease 2.0s;
+}
