@@ -1,4 +1,5 @@
 let adventurerData;
+let defaultAdventurerDataURL = 'adventurerData.json';
 
 var loadDataFromMemory = function () {
     var stringData = localStorage.getItem("adventurerStringData");
@@ -14,7 +15,7 @@ var loadDataFromMemory = function () {
     } else {
         // fetch default JSON
         try {
-            fetch('adventurerData.JSON')
+            fetch(defaultAdventurerDataURL)
             .then(response => response.json())
             .then(data => { 
                 adventurerData = data;
