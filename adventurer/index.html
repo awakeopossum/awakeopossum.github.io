@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="adventurer.ico">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+        <!-- Custom -->
+        <link rel="stylesheet" href="style.css">
+        <script src="errorHandler.js" type="text/javascript"></script>
+        <script src="DOMPurify/purify.min.js" type="text/javascript"></script>
+        <script src="index.js" type="text/javascript"></script>
+        <script src="handler.js" type="text/javascript"></script>
+        <title>Adventurer</title>
+    </head>
+    <body class="bg-dark">
+        <div class="container col-12 col-md-9 col-lg-6">
+            <div class="row py-5 px-3 text-light text-center">
+                <h1>  •  ADVENTURER  •  </h1>
+            </div>
+            <div class="row col-12 align-items-center my-5 mx-0 p-4 border border-1 rounded" id="main">
+                <div class="row">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item active" aria-current="page"><a href="#">Home</a></li>
+                        </ol>
+                      </nav>
+                </div>
+                <div class="row m-0 mb-3">
+                    <div class="list-group p-0" id="stories-list-group">
+                        <!-- TODO: INSERT DEFAULT STORY HERE FROM SCRIPT -->
+                        
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <button type="button" class="btn btn-light" onclick="addNewStoryToListGroup();">Add story</button>
+                </div>
+            </div>
+            <script>loadDataFromMemory();</script>
+            <div class="row p-3 py-2 text-light justify-content-evenly">
+                <!-- STYLING WORKS, SO LEAVE IT THERE. -->
+                <button type="button" class="btn btn-outline-light col-3" onclick="downloadStoryFile();">[Download]</button><span class="btn btn-outline-light btn-file col-3"><input id="input-file" type="file" onchange="uploadStoryFile(this.files[0]);">[Upload]</span>
+            </div>
+        </div>
+    </body>
+</html>
