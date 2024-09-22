@@ -1,0 +1,142 @@
+{
+    "1": {
+        "title": "Stokats",
+        "rooms": {
+            "1": {
+                "text": "Ti trovi alle porte della maestosa citta' di Stokats. Cosa fai?",
+                "choice1": {
+                    "text": "Entro",
+                    "dest": "2"
+                },
+                "choice2": {
+                    "text": "Resto fuori",
+                    "dest": "1"
+                },
+                "timer": {
+                    "duration": "10",
+                    "dest": "1"
+                }
+            },
+            "2": {
+                "text": "Sei all'interno della città di Stokats. I forestieri devono avere un one-night stand con un local, pena il linciaggio. Scegli il sexworker per il tuo rituale di benvenuto.",
+                "choice1": {
+                    "text": "Chloe la normie pazza",
+                    "dest": "3"
+                },
+                "choice2": {
+                    "text": "Miguel il trans brasiliano",
+                    "dest": "4"
+                },
+                "timer": {
+                    "duration": "10",
+                    "dest": "2"
+                }
+            },
+            "3": {
+                "text": "La cosa inizia con sesso normale, ma in poco tempo ti ritrovi appeso al lampadario. Ti ribelli o subisci?",
+                "choice1": {
+                    "text": "Ti ribelli",
+                    "dest": "7"
+                },
+                "choice2": {
+                    "text": "La assecondi perche' ti piace",
+                    "dest": "8"
+                },
+                "timer": {
+                    "duration": "10",
+                    "dest": "3"
+                }
+            },
+            "4": {
+                "text": "Miguel sembra proprio una donna, ma nasconde un pitone enorme e imbizzarrito tra le gambe. Cosa fai?",
+                "choice1": {
+                    "text": "Tenti di addomesticarlo",
+                    "dest": "5"
+                },
+                "choice2": {
+                    "text": "Il pitone ha il comando",
+                    "dest": "8"
+                },
+                "timer": {
+                    "duration": "10",
+                    "dest": "4"
+                }
+            },
+            "5": {
+                "text": "Riesci nella missione e ti guadagni la stima degli abitanti. Ora puoi lasciare Stokats.",
+                "choice1": {
+                    "text": "Resti",
+                    "dest": "2"
+                },
+                "choice2": {
+                    "text": "Lasci la citta'",
+                    "dest": "1"
+                },
+                "timer": {
+                    "duration": "10",
+                    "dest": "5"
+                }
+            },
+            "6": {
+                "text": "Perdi ogni umana dignita' e non puoi lasciare Stokats. Ti disperi e tenti la fuga o segui le regole e torni alla scelta?",
+                "choice1": {
+                    "text": "Fuggi",
+                    "dest": "1"
+                },
+                "choice2": {
+                    "text": "Ri-scegli",
+                    "dest": "2"
+                },
+                "timer": {
+                    "duration": "10",
+                    "dest": "6"
+                }
+            },
+            "7": {
+                "text": "Fallisci la tua missione miseramente, sei linciato e muori.",
+                "choice1": {
+                    "text": "Rinasci",
+                    "dest": "1"
+                },
+                "choice2": {
+                    "text": "Non c'è vita dopo la morte",
+                    "dest": "7"
+                },
+                "timer": {
+                    "duration": "10",
+                    "dest": "7"
+                }
+            },
+            "8": {
+                "text": "Hai il miglior sesso della tua vita, vi innamorate e finite per vivere insieme a Stokats. Adottate un bambino nero. Ma i forestieri ti rendono geloso del tuo partner, e decidi che forse e' tempo di lasciare la citta'.",
+                "choice1": {
+                    "text": "Resti",
+                    "dest": "9"
+                },
+                "choice2": {
+                    "text": "Lasci la citta'",
+                    "dest": "1"
+                },
+                "timer": {
+                    "duration": "10",
+                    "dest": "8"
+                }
+            },
+            "9": {
+                "text": "Muori di vecchiaia a Stokats. Ti viene data l'opportunita' di rinascere da un genio della lampada a cui una volta hai fatto una bocca.",
+                "choice1": {
+                    "text": "Ricominci la tua vita",
+                    "dest": "1"
+                },
+                "choice2": {
+                    "text": "Non c'è vita dopo la morte",
+                    "dest": "9"
+                },
+                "timer": {
+                    "duration": "10",
+                    "dest": "9"
+                }
+            }
+        }
+    }
+}
